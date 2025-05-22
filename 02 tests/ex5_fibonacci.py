@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-""" time_it.py
+""" ex5_fibonacci.py
 
-Timeing template
+Recursion with Fibonacci
 
 :author:	wolf
 :created:	2025.05.22
@@ -17,15 +17,17 @@ timing_results = []
 # --- function to be timed ---
 
 
-def test_fn(n):
-    pass
+def python_fibonacci(n):
+    if n <= 1:
+        return n
+    return python_fibonacci(n - 1) + python_fibonacci(n - 2)
 
 
 for i in range(iterations):
     start = time.perf_counter()
 
     # call the test function
-    test_fn(1)
+    python_fibonacci(42)
 
     end = time.perf_counter()
 

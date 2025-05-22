@@ -26,12 +26,12 @@ def python_sort(n):
 
 
 for i in range(iterations):
-    start = time.time()
+    start = time.perf_counter()
 
     # call the test function
     python_sort(10**7)
 
-    end = time.time()
+    end = time.perf_counter()
 
     timing_results.append(end - start)
 

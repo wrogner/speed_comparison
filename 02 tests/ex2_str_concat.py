@@ -25,7 +25,7 @@ def python_string_concat(n):
 
 
 for i in range(iterations):
-    start = time.time()
+    start = time.perf_counter()
 
     # call the test function
     python_string_concat(10**7)
