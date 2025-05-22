@@ -1,4 +1,4 @@
-// run with: deno run time_it.js
+// run with: deno run time_it.js | node time_it.js
 
 /* time_it.js
 
@@ -15,15 +15,26 @@ const timing_results = [];
 // --- function to be timed-- -
 
 function test_fn(n) {
-    return
+    return;
 }
+
+function sleep(ms) {
+    const start = Date.now();
+    while (Date.now() - start < (ms + 1)) {
+        // busy wait
+    }
+    return;
+}
+
 
 
 for (let i = 0; i < iterations; i++) {
     const start = performance.now();
 
     // call the test function
-    test_fn(1000000);
+    //test_fn(1000000);
+    sleep(1000);
+
 
     const end = performance.now();
 

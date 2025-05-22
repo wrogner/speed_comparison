@@ -31,4 +31,4 @@ for i in range(iterations):
     timing_results.append(end - start)
 
 
-print(f"Elapsed time:  {sum(timing_results)/iterations:.4f} seconds")
+print(f"Elapsed time:  {sum(timing_results)/iterations:.16f} seconds")

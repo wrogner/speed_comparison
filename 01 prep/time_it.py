@@ -18,7 +18,7 @@ timing_results = []
 
 
 def test_fn(n):
-    pass
+    time.sleep(1)
 
 
 for i in range(iterations):
@@ -32,4 +32,4 @@ for i in range(iterations):
     timing_results.append(end - start)
 
 
-print(f"Elapsed time:  {sum(timing_results)/iterations:.4f} seconds")
+print(f"Elapsed time:  {sum(timing_results)/iterations:.16f} seconds")

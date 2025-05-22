@@ -11,6 +11,8 @@ The comparison is based on the following tasks:
 1. Count characters in a string (count specific in a random string of length 10^7)
 1. Fibonacci (calculate the 42nd Fibonacci number)
 1. Matrix multiplication (multiply two 1000x1000 matrices)
+1. Dictionary / object manipulation (create a dictionary / object with 10^7 random key-value pairs)
+
 
 <br><br><hr> based on
 [python-vs-javascript](https://medium.com/@burhan-khan/python-vs-javascript-a-performance-comparison-through-code-examples-ed1b379fbff7)

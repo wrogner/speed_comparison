@@ -1,4 +1,4 @@
-// run with: deno run ex1_sum_of_squares.js
+// run with: deno run ex1_sum_of_squares.js | node ex1_sum_of_squares.js
 
 /* ex1_sum_of_squares.js
 

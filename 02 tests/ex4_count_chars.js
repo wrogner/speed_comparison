@@ -1,4 +1,4 @@
-// run deno ex4_count_chars.js
+// run deno ex4_count_chars.js | node ex4_count_chars.js
 
 /* ex4_count_chars.js
 

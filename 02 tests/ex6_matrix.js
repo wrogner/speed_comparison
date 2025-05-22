@@ -1,4 +1,4 @@
-// run with: deno run ex6_matrix.js
+// run with: deno run ex6_matrix.js | node ex6_matrix.js
 
 /* ex6_matrix.js
 
@@ -15,7 +15,7 @@ const timing_results = [];
 // --- function to be timed-- -
 
 function jsMatrixMultiply(n) {
-//    const A = Array(n).fill().map(() => Array(n).fill().map(() => Math.floor(Math.random() * 101)));
+    //    const A = Array(n).fill().map(() => Array(n).fill().map(() => Math.floor(Math.random() * 101)));
     const A = Array(n).fill().map(() => Array(n).fill().map(() => Math.floor(Math.random() * 101)));
     const B = Array(n).fill().map(() => Array(n).fill().map(() => Math.floor(Math.random() * 101)));
     const result = Array(n).fill().map(() => Array(n).fill(0));
@@ -34,7 +34,7 @@ for (let i = 0; i < iterations; i++) {
     const start = performance.now();
 
     // call the test function
-    jsMatrixMultiply(10**3);
+    jsMatrixMultiply(10 ** 3);
 
     const end = performance.now();
 

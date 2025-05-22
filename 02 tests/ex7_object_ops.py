@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-""" ex6_matrix.py
+""" ex7_object_ops.py
 
-Matrix multiplication
+Object manipulation
 
 :author:	wolf
 :created:	2025.05.22
@@ -18,22 +18,21 @@ timing_results = []
 # --- function to be timed ---
 
 
-def python_matrix_multiply(n):
-    A = [[random.randint(0, 100) for _ in range(n)] for _ in range(n)]
-    B = [[random.randint(0, 100) for _ in range(n)] for _ in range(n)]
-    result = [[0] * n for _ in range(n)]
+def python_dict_ops(n, m):
+    d = {}
     for i in range(n):
-        for j in range(n):
-            for k in range(n):
-                result[i][j] += A[i][k] * B[k][j]
-    return result
+        d[str(i)] = random.randint(0, 100)
+    total = 0
+    for _ in range(m):
+        total += d[str(random.randint(0, n-1))]
+    return total
 
 
 for i in range(iterations):
     start = time.perf_counter()
 
     # call the test function
-    python_matrix_multiply(10**3)
+    python_dict_ops(10**7, 10**5)
 
     end = time.perf_counter()
 

@@ -30,9 +30,9 @@ for i in range(iterations):
     # call the test function
     python_string_concat(10**7)
 
-    end = time.time()
+    end = time.perf_counter()
 
     timing_results.append(end - start)
 
 
-print(f"Elapsed time:  {sum(timing_results)/iterations:.4f} seconds")
+print(f"Elapsed time:  {sum(timing_results)/iterations:.16f} seconds")

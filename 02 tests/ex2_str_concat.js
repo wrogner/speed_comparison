@@ -1,6 +1,6 @@
-// run deno 02_str_concat.js
+// run deno ex2_str_concat.js | node ex2_str_concat.js
 
-/* 02_str_concat.js
+/* ex2_str_concat.js
 
 Concatenate 10^7 random strings of length 10
 

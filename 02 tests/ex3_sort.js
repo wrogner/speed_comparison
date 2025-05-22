@@ -1,4 +1,4 @@
-// run deno ex3_sort.js
+// run deno ex3_sort.js | node ex3_sort.js
 
 /* ex3_sort.js
 
