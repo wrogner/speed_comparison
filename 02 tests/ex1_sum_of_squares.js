@@ -35,6 +35,6 @@ for (let i = 0; i < iterations; i++) {
 }
 
 
-console.log("Timing results: ",
+console.log("Elapsed time: ",
     timing_results.reduce((a, b) => a + b) / iterations / 1000,
     "seconds");

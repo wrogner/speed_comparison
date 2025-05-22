@@ -1,28 +1,35 @@
 #!/usr/bin/env python3
 
-""" ex1_sum_of_squares.py
+""" ex3_sort.py
 
-Sum of squares
+Sort 10^7 random integers
 
 :author:	wolf
 :created:	2025.05.22
 """
 
+
 import time
+import random
 
 iterations = 3
 timing_results = []
 
 # define the test function
-def python_sum_squares(n):
-    return sum(i * i for i in range(1, n + 1))
+# --- function to be timed ---
+
+
+def python_sort(n):
+    arr = [random.randint(0, 100000) for _ in range(n)]
+    arr.sort()
+    return arr
 
 
 for i in range(iterations):
     start = time.time()
 
     # call the test function
-    python_sum_squares(10**9)
+    python_sort(10**7)
 
     end = time.time()
 
