@@ -13,6 +13,9 @@ The comparison is based on the following tasks:
 1. Matrix multiplication (multiply two 1000x1000 matrices)
 1. Dictionary / object manipulation (create a dictionary / object with 10^7 random key-value pairs)
 1. List comprehension vs. Array mapping (create a list / array of 10^7 random integers)
+1. Regex (find all matches of a regex in a string of length 10^7)
+1. Primes (find all prime numbers up to 10^7)
+
 
 <br><br><hr> based on
 [python-vs-javascript](https://medium.com/@burhan-khan/python-vs-javascript-a-performance-comparison-through-code-examples-ed1b379fbff7)
@@ -43,6 +46,8 @@ by [Burhan Khan](https://medium.com/@burhan-khan)
 | Matrix multiplication | 0.25s | 0.12s |
 | Dictionary / object manipulation | 0.25s | 0.12s |
 | List comprehension vs. Array mapping | 0.25s | 0.12s |
+| Regex | 0.25s | 0.12s |
+| Primes | 0.25s | 0.12s |
 
 
 <br>
