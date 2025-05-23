@@ -19,7 +19,7 @@ The comparison is based on the following tasks:
 1. Regex (find all matches of a regex in a string of length 10^7)
 1. Primes (find all prime numbers up to 10^7)
 
-<br><br><hr> based on
+<br><hr> based on
 [python-vs-javascript](https://medium.com/@burhan-khan/python-vs-javascript-a-performance-comparison-through-code-examples-ed1b379fbff7)
 by [Burhan Khan](https://medium.com/@burhan-khan)
 <br><br>
