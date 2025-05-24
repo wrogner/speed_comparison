@@ -19,6 +19,10 @@ The comparison is based on the following tasks:
 1. Regex (find all matches of a regex in a string of length 10^7)
 1. Primes (find all prime numbers up to 10^7)
 
+Additionally:
+
+11. Iterate over Array (10^8 elements), test prime number
+
 <br><hr> based on
 [python-vs-javascript](https://medium.com/@burhan-khan/python-vs-javascript-a-performance-comparison-through-code-examples-ed1b379fbff7)
 by [Burhan Khan](https://medium.com/@burhan-khan)
@@ -66,6 +70,14 @@ $ ./run_all.sh
 | Regex                                |     1.9600s | **0.4169s** |     0.4752s |       4.7 |
 | Primes                               | **0.0386s** |     5.7595s |     6.8393s |     176.5 |
 | _**Total**_                          |    _132.8s_ | _**13.4s**_ |     _14.2s_ | _**9.9**_ |
+
+<br>
+
+| Additional: test_primes           |   Python | JS (deno) |   JS (node) |     Factor |
+| --------------------------------- | -------: | --------: | ----------: | ---------: |
+| Iterate over Array,               |  6.9370s |   0.6170s | **0.6150s** |       11.3 |
+| &nbsp;&nbsp;&nbsp;calculate prime | 46.7650s |   0.0910s | **0.0870s** |      537.5 |
+| _**Total**_                       |  _53.7s_ |    _0.7s_ |  _**0.7s**_ | _**76.6**_ |
 
 <br>
 
