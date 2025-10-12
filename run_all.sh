@@ -4,17 +4,24 @@
 
 OLDDIR=`pwd`
 TESTDIR="02 tests"
-TESTS=("ex1_sum_of_squares" "ex2_str_concat" "ex3_sort" "ex4_count_chars" "ex5_fibonacci" "ex6_matrix" "ex7_object_ops" "ex8_lists" "ex9_regexp" "ex10_prime")
+TESTS=("ex1_sum_of_squares" "ex2_str_concat" "ex3_sort" "ex4_count_chars" "ex5_fibonacci" "ex6_matrix" "ex7_object_ops" "ex8_lists" "ex9_regexp" "ex10_prime" "test_primes")
 
+echo -e "\nSpeed comparison of Python, Node.js, and Deno"
+echo -e "----------------------------------------------\n"
+
+
+echo -e "Python version: `python --version`"
+echo -e "Node version: `node --version`"
+echo -e "Deno version: `deno --version`"
 
 cd 02\ tests
-echo "Running tests in $TESTDIR"
+echo -e "\nRunning tests in $TESTDIR"
 
 for test in "${TESTS[@]}"; do
-    echo "*** Running test: $test ***"
+    echo -e "\n*** Running test: $test ***\n"
     if [ -f "$test.py" ]; then
-        echo "Python: "
-        python "$test.py"
+        echo "Python:            "
+        uv run "$test.py"
     fi
 
     if [ -f "$test.js" ]; then
@@ -26,4 +33,4 @@ for test in "${TESTS[@]}"; do
 done
 
 cd $OLDDIR
-echo "Tests completed."
+echo -e "\nTests completed."
