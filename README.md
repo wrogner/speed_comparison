@@ -34,16 +34,16 @@ by [Burhan Khan](https://medium.com/@burhan-khan)
 
     CPU: Apple M4 Pro
     RAM: 128GB
-    OS: MacOS 15.5 (Sequoia)
+    OS: MacOS 26.0.1 (Tahoe)
 
 #### Python:
 
-    Python 3.13.3
+    Python 3.14, 3.13.3
 
 #### JavaScript:
 
-    Deno 2.3.3
-    V8 13.7.152.6
+    Deno 2.5.4, 2.3.3
+    V8 14.0.365.5-rusty, 13.7.152.6
 
 <br>
 
@@ -57,7 +57,7 @@ $ ./run_all.sh
 
 <br>
 
-| Task                                 | Python 3.14.0 |    Deno 2.5.4 |  Node 24.10.0 |    Factor |   | Python 3.13.3 |   JS (deno) |   JS (node) |    Factor |
+| Task                                 | Python 3.14.0 |    Deno 2.5.4 |  Node 24.10.0 |    Factor |   | Python 3.13.3 |  Deno 2.3.3 |   JS (node) |    Factor |
 | ------------------------------------ | ------------: | ------------: | ------------: | --------: | - | ------------: | ----------: | ----------: | --------: |
 | Numerical computation                |    33.1490s + |     0.5977s - | **0.5867s** - |      56.5 |   |      33.8974s |     0.5805s | **0.5797s** |      58.4 |
 | String manipulation                  |    12.2117s + | **1.7287s** + |     1.7421s - |       7.1 |   |      15.8523s |     1.7639s | **1.4808s** |      10.7 |
@@ -73,18 +73,18 @@ $ ./run_all.sh
 
 <br>
 
-| Additional: test_primes           |   |   |   |   | Python 3.14.0 |    Deno 2.5.4 |  Node 24.10.0 |     Factor |   | Python 3.13.3 | JS (deno) |   JS (node) |     Factor |
-| --------------------------------- | - | - | - | - | ------------: | ------------: | ------------: | ---------: | - | ------------: | --------: | ----------: | ---------: |
-| Iterate over Array,               |   |   |   |   |     7.1834s - |     0.6030s + | **0.5930s** + |       12.1 |   |       6.9370s |   0.6170s | **0.6150s** |       11.3 |
-| &nbsp;&nbsp;&nbsp;calculate prime |   |   |   |   |    37.5315s + | **0.0920s** - |     0.0930s - |      407,9 |   |      46.7650s |   0.0910s | **0.0870s** |      537.5 |
-| _**Total**_                       |   |   |   |   |     _44.7s_ + |      _0.7s_ + |  _**0.7s**_ + | _**64.3**_ |   |       _53.7s_ |    _0.7s_ |  _**0.7s**_ | _**76.5**_ |
+| Additional: test_primes           |   |   |   |   | Python 3.14.0 |    Deno 2.5.4 |  Node 24.10.0 |     Factor |   | Python 3.13.3 | Deno 2.3.3 |   JS (node) |     Factor |
+| --------------------------------- | - | - | - | - | ------------: | ------------: | ------------: | ---------: | - | ------------: | ---------: | ----------: | ---------: |
+| Iterate over Array,               |   |   |   |   |     7.1834s - |     0.6030s + | **0.5930s** + |       12.1 |   |       6.9370s |    0.6170s | **0.6150s** |       11.3 |
+| &nbsp;&nbsp;&nbsp;calculate prime |   |   |   |   |    37.5315s + | **0.0920s** - |     0.0930s - |      407,9 |   |      46.7650s |    0.0910s | **0.0870s** |      537.5 |
+| _**Total**_                       |   |   |   |   |     _44.7s_ + |      _0.7s_ + |  _**0.7s**_ + | _**64.3**_ |   |       _53.7s_ |     _0.7s_ |  _**0.7s**_ | _**76.5**_ |
 
 <br>
 
 ### Conclusion
 
 - `JavaScript` outperforms `Python` in most tasks
-- Python `3.14` improves on `3.13.x`'s performance by 14,5%
+- Python `3.14` improves on `3.13.x`'s performance by ~15%
 - Python `comprehensions` are faster than JavaScript's array mapping
 - `deno` is faster than `node` in most tasks
 - JavaScript `Array`s are limited in size (< 10^8). `MDN` stated size limits
