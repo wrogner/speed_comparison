@@ -10,7 +10,7 @@ The comparison is based on the following tasks:
 1. Sort list / array (sort 10^7 random integers)
 1. Count characters in a string (count specific in a random string of length
    10^7)
-1. Fibonacci (calculate the 42nd Fibonacci number)
+1. Fibonacci (calculate the 42nd Fibonacci number, recursively)
 1. Matrix multiplication (multiply two 1000x1000 matrices)
 1. Dictionary / object manipulation (create a dictionary / object with 10^7
    random key-value pairs)
@@ -28,6 +28,9 @@ Additionally:
 by [Burhan Khan](https://medium.com/@burhan-khan)
 <br><br>
 
+Refer also to [Miguel Grinberg](https://blog.miguelgrinberg.com/) on
+- [Python 3.8 and 3.13 speed comparison (2024)](https://blog.miguelgrinberg.com/post/is-python-really-that-slow) as well as
+- [Python 3.14 speed benchmarks (2025)](https://blog.miguelgrinberg.com/post/python-3-14-is-here-how-fast-is-it?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-717-october-9-2025).
 ### Environments
 
 #### Hardware:
@@ -73,11 +76,11 @@ $ ./run_all.sh
 
 <br>
 
-| Additional: test_primes           |   |   |   |   | Python 3.14.0 |    Deno 2.5.4 |  Node 24.10.0 |     Factor |   | Python 3.13.3 | Deno 2.3.3 |   JS (node) |     Factor |
-| --------------------------------- | - | - | - | - | ------------: | ------------: | ------------: | ---------: | - | ------------: | ---------: | ----------: | ---------: |
-| Iterate over Array,               |   |   |   |   |     7.1834s - |     0.6030s + | **0.5930s** + |       12.1 |   |       6.9370s |    0.6170s | **0.6150s** |       11.3 |
-| &nbsp;&nbsp;&nbsp;calculate prime |   |   |   |   |    37.5315s + | **0.0920s** - |     0.0930s - |      407,9 |   |      46.7650s |    0.0910s | **0.0870s** |      537.5 |
-| _**Total**_                       |   |   |   |   |     _44.7s_ + |      _0.7s_ + |  _**0.7s**_ + | _**64.3**_ |   |       _53.7s_ |     _0.7s_ |  _**0.7s**_ | _**76.5**_ |
+| Additional: test_primes           | Python 3.14.0 |    Deno 2.5.4 |  Node 24.10.0 |     Factor |   | Python 3.13.3 | Deno 2.3.3 |   JS (node) |     Factor |
+| --------------------------------- | ------------: | ------------: | ------------: | ---------: | - | ------------: | ---------: | ----------: | ---------: |
+| Iterate over Array,               |     7.1834s - |     0.6030s + | **0.5930s** + |       12.1 |   |       6.9370s |    0.6170s | **0.6150s** |       11.3 |
+| &nbsp;&nbsp;&nbsp;calculate prime |    37.5315s + | **0.0920s** - |     0.0930s - |      407,9 |   |      46.7650s |    0.0910s | **0.0870s** |      537.5 |
+| _**Total**_                       |     _44.7s_ + |      _0.7s_ + |  _**0.7s**_ + | _**64.3**_ |   |       _53.7s_ |     _0.7s_ |  _**0.7s**_ | _**76.5**_ |
 
 <br>
 
